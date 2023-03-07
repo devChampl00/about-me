@@ -18,23 +18,23 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Umam Alfarizi</a>
+                <a class="navbar-brand" href="#">lezipipell</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link active" id="home-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" id="about-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#gallery">Gallery</a>
+                            <a class="nav-link" id="gallery-link" href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
+                            <a class="nav-link" id="contact-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -44,14 +44,14 @@
 
         <!-- JUMBOTRON -->
         <section class="jumbotron text-center">
-            <img src="img/saya.jpg" alt="Umam Alfarizi" width="200" class="rounded-circle img-thumbnail" />
-            <h1 class="display-4">Umam Alfarizi</h1>
-            <p class="lead">Gabut | Tidur | Makan</p>
+            <img src="img/gper.jpg" alt="Umam Alfarizi" class="rounded-circle img-thumbnail jumbotron-image mb-3" />
+            <h1 class="jumbotron-name display-5">Umam Alfarizi</h1>
+            <p class="lead text-muted">Ngopi | Ngudud | Ngoding</p>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path
                     fill="#ffffff"
                     fill-opacity="1"
-                    d="M0,160L40,170.7C80,181,160,203,240,186.7C320,171,400,117,480,133.3C560,149,640,235,720,261.3C800,288,880,256,960,229.3C1040,203,1120,181,1200,176C1280,171,1360,181,1400,186.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+                    d="M0,192L80,202.7C160,213,320,235,480,218.7C640,203,800,149,960,149.3C1120,149,1280,203,1360,229.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
                 ></path>
             </svg>
         </section>
@@ -60,21 +60,25 @@
         <!-- ABOUT -->
         <section id="about">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="text-center mb-3">About</h2>
-                    </div>
+                <div class="row mb-4">
+                    <h2 class="text-center">About Me</h2>
                 </div>
-                <div class="row justify-content-center fs-5 text-center">
-                    <div class="col-md-5 mb-1">Saya tidak tau mau ngisi apa jadi sembarang aja hehe. Pertama puji syukur ke Hadirat Allah dan sholawat beserta salam atas junjungan Nabi besar Muhammad saw.</div>
-                    <div class="col-md-5">Saya mengucapkan Terima kasih banyak kepada tim Jong Kreatif atas kegiatan bermanfaat yang diadakan gratis ini, semoga berkah dan sehat selalu kepada semua pelaku pengadaan kegiatan ini.</div>
+                <div class="row justify-content-center text-center py-3 fs-5">
+                    <div class="col-lg-5 p-3 mb-1">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure placeat sequi, molestias nostrum voluptate ipsum repellendus magni? Ipsum aspernatur, velit, atque dignissimos cumque ex quos, reprehenderit sit
+                        architecto eaque hic inventore vel minima nihil?
+                    </div>
+                    <div class="col-lg-5 p-3">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam rem soluta maiores explicabo, provident repellendus at corrupti non iste sapiente dolorem aut suscipit cumque sit similique error atque, magni debitis
+                        fugiat numquam.
+                    </div>
                 </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path
                     fill="#e2edff"
                     fill-opacity="1"
-                    d="M0,192L40,176C80,160,160,128,240,144C320,160,400,224,480,229.3C560,235,640,181,720,176C800,171,880,213,960,224C1040,235,1120,213,1200,197.3C1280,181,1360,171,1400,165.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+                    d="M0,192L80,208C160,224,320,256,480,240C640,224,800,160,960,160C1120,160,1280,224,1360,256L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
                 ></path>
             </svg>
         </section>
@@ -83,96 +87,62 @@
         <!-- GALLERY -->
         <section id="gallery">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="text-center mb-3">Gallery</h2>
-                    </div>
+                <div class="row mb-4">
+                    <h2 class="text-center">My Galleries</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="img/1.jpg" class="card-img-top" alt="gallery1" />
-                        </div>
+                <div class="row py-5">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
                     </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="img/2.jpg" class="card-img-top" alt="gallery2" />
-                        </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
                     </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="img/3.jpg" class="card-img-top" alt="gallery3" />
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="img/4.jpg" class="card-img-top" alt="gallery4" />
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="img/5.jpg" class="card-img-top" alt="gallery5" />
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="img/6.jpg" class="card-img-top" alt="gallery6" />
-                        </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
                     </div>
                 </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path
-                    fill="#fff"
+                    fill="#ffffff"
                     fill-opacity="1"
-                    d="M0,64L40,80C80,96,160,128,240,128C320,128,400,96,480,96C560,96,640,128,720,138.7C800,149,880,139,960,117.3C1040,96,1120,64,1200,48C1280,32,1360,32,1400,32L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+                    d="M0,224L80,202.7C160,181,320,139,480,133.3C640,128,800,160,960,170.7C1120,181,1280,171,1360,165.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
                 ></path>
             </svg>
         </section>
         <!-- /GALLERY -->
 
-        <!-- FEATURES -->
-        <section id="features">
+        <!-- CONTACT -->
+        <section id="contact">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="accordion col-10" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Kenapa anda mengikuti kegiatan ini?</button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Saya mengikuti kegiatan ini karena kebetulan menemukan postingan yang dishare guru saya dan tertarik dengan program yang diselenggarakan yakni seputar pemrograman. Saya dari dulu berfikir bagaimana proses
-                                    terciptanya web atau aplikasi yang saya akses ini, sehingga saya termotivasi untuk mengikuti kegiatan ini.
-                                </div>
+                <div class="row mb-4">
+                    <h2 class="text-center">Contact Me</h2>
+                </div>
+                <div class="row justify-content-center py-4">
+                    <div class="col-lg-6">
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" />
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Apa kendala yang dirasakan selama mengikuti kegiatan ini?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Untuk kendala.. mm agak kurang menyerap apa yang disampaikan oleh mentor (bukan mentornya yang gak expert, sayanya aja hehe karena bener-bener pemula), tapi alhamdulillah sejauh ini bisa memahami dengan
-                                    mencari refrensi dari sember lain di internet.
-                                </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" name="email" />
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Tugas yang ini kenapa jauh beda dengan yang lain, copas?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Untuk tugas ini saya tidak copas punya orang (yang sebelum-sebelumnya juga ngga sii), karena pake komponen yang disediakan sama bootstrap, kebetulan saya mengikuti tutorial dari channelnya mas
-                                    <a href="https://www.youtube.com/c/WebProgrammingUNPAS" target="_blank">Sandhika Galih </a> yang mana materi dalam video beliau persis sama dengan tugas di modul kali ini.
-                                </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea name="message" id="message" class="form-control" rows="4"></textarea>
                             </div>
-                        </div>
+                            <button type="submit" id="form-submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -180,17 +150,18 @@
                 <path
                     fill="#0d6efd"
                     fill-opacity="1"
-                    d="M0,96L40,128C80,160,160,224,240,240C320,256,400,224,480,229.3C560,235,640,277,720,277.3C800,277,880,235,960,192C1040,149,1120,107,1200,96C1280,85,1360,107,1400,117.3L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+                    d="M0,128L80,149.3C160,171,320,213,480,240C640,267,800,277,960,256C1120,235,1280,181,1360,154.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
                 ></path>
             </svg>
         </section>
-        <!-- /FEATURES -->
+        <!-- /CONTACT -->
 
         <!-- FOOTER -->
         <footer class="bg-primary text-center text-white pb-5">
-            <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://web.facebook.com/idji.dgretonger/" target="_blank" class="fw-bold text-white">Umam Alfarizi</a></p>
+            <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://web.facebook.com/lezipipell/" target="_blank" class="fw-bold text-white">Umam Alfarizi</a></p>
         </footer>
         <!-- /FOOTER -->
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

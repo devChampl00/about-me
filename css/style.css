@@ -1,12 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Poppins:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,600;1,700;1,800&family=Special+Elite&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand {
+    font-family: 'Covered By Your Grace';
+    font-size: 25px;
+}
+
 .jumbotron {
-  padding-top: 6rem;
-  background-color: #e2edff;
+    padding-top: 9rem;
+    background-color: #e2edff;
+}
+.jumbotron-name {
+    font-family: 'Special Elite', cursive;
+}
+
+.jumbotron-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 38%;
 }
 
 #gallery {
-  background-color: #e2edff;
+    background-color: #e2edff;
 }
 
 section {
-  padding-top: 4rem;
+    padding-top: 4rem;
 }
