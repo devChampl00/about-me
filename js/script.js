@@ -1,6 +1,3 @@
-const formSubmit = document.querySelector('#form-submit');
-formSubmit.addEventListener('click', () => alert('Sorry ngab.. form nya belum bisa muehehe :v'));
-
 const homeLink = document.getElementById('home-link'),
     aboutLink = document.getElementById('about-link'),
     galleryLink = document.getElementById('gallery-link'),
@@ -28,6 +25,14 @@ window.addEventListener('scroll', () => {
         galleryLink.classList.remove('active');
         contactLink.classList.remove('active');
     }
-});
+}); // ajarin cara yg lebih mudah cok wkwk
 
-// ajarin cara yg lebih mudah cok wkwk
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzt54iJ4fwGDJEbR2ds7jIIXrlaaenojLz2-S-4sy1SGe5bv0LNviy_CYrV6Whw57k/exec';
+const form = document.forms['lezipipell-contact-form'];
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then((response) => console.log('Success!', response))
+        .catch((error) => console.error('Error!', error.message));
+});
