@@ -44,6 +44,9 @@ const alertFailed = document.querySelector('#alert-danger');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    button.innerHTML = 'Loading...';
+    button.setAttribute('disabled', '');
+
     if (!input.name.value.length) {
         nameValidation = 'Fullname is required';
     } else if (input.name.value.length < 5) {
@@ -89,11 +92,10 @@ form.addEventListener('submit', (e) => {
     }
 
     if (nameValidation || emailValidation || messageValidation) {
+        button.innerHTML = 'Submit';
+        button.removeAttribute('disabled');
         return;
     } else {
-        button.innerHTML = 'Loading...';
-        button.setAttribute('disabled', '');
-
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then((response) => {
                 console.log(response);
