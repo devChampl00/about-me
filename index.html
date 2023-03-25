@@ -13,6 +13,23 @@
 
         <link rel="stylesheet" href="css/style.css" />
         <title>Umam Alfarizi</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            * {
+                font-family: 'Lato', sans-serif;
+            }
+            .navbar-brand {
+                font-family: 'Covered By Your Grace';
+                font-size: 24px;
+            }
+        </style>
     </head>
     <body id="home">
         <!-- NAVBAR -->
@@ -129,31 +146,37 @@
                 <div class="row justify-content-center py-4">
                     <div class="col-lg-6">
                         <!-- alert -->
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <div class="alert alert-success alert-dismissible fade d-none" role="alert" id="alert">
                             <strong>Success!</strong> Thank you for your message!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <!-- alert warning -->
+                        <div class="alert alert-danger alert-dismissible fade d-none" role="alert" id="alert-danger">
+                            <strong>Failed!</strong> Check your internet connection!
+                            <a href="/">Reload</a>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
 
                         <form name="lezipipell-contact-form">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Fullname</label>
-                                <input type="text" class="form-control is-valid" id="name" name="name" required />
-                                <div class="valid-feedback">Looks good!</div>
+                                <input type="text" class="form-control shadow-sm rounded-3" id="name" name="name" required />
+                                <div id="name-validation" class="invalid-feedback"></div>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control is-invalid" id="email" name="email" required />
-                                <div id="validationServerUsernameFeedback" class="invalid-feedback">Please choose a username.</div>
+                                <input type="email" class="form-control shadow-sm rounded-3" id="email" name="email" required />
+                                <div id="email-validation" class="invalid-feedback"></div>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Your Message</label>
-                                <textarea class="form-control" rows="4" id="message" name="message" required></textarea>
+                                <textarea class="form-control shadow-sm rounded-3" rows="4" id="message" name="message" required></textarea>
+                                <div id="message-validation" class="invalid-feedback"></div>
                             </div>
-                            <button type="submit" class="btn btn-primary px-3">Submit</button>
-                            <button class="btn btn-primary px-3" type="button" disabled>
-                                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                            <button type="submit" class="btn btn-primary px-4 shadow-sm" id="button">Submit</button>
+                            <!-- <button class="btn btn-primary px-3 d-none" type="button" id="loading" disabled>
                                 Loading...
-                            </button>
+                            </button> -->
                         </form>
                     </div>
                 </div>
